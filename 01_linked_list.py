@@ -1,4 +1,5 @@
 # sinlge link list implementation in python
+
 class node:
     __data   = None
     __nxtptr = None

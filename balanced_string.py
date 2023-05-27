@@ -1,6 +1,5 @@
 # is string balanced () {} []
 
-
 str = "(){}[()](){{()}}"
 str = list(str)
 li = []

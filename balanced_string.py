@@ -1,14 +1,15 @@
 # is string balanced () {} []
 
-str = "(){}[()](){{()}}"
-str = list(str)
+
+
+str = list(input("enter string"))
 li = []
 
 for i in str:
-    if i in [ '(', '{', '[' ]:
-        li.append(i)
-        print(li)
-    if (i == ')' and li[len(li) - 1] == '(' ) or (i == '}' and li[len(li) - 1] == '{' ) or (i == ']' and li[len(li) - 1] == '[' ):
+    li.append(i)
+    print(li)
+    if (i == ')' and li[len(li) - 2] == '(' ) or (i == '}' and li[len(li) - 2] == '{' ) or (i == ']' and li[len(li) - 2] == '[' ):
+        li.pop()
         li.pop()
         print(li)
 if len(li) == 0:
